@@ -24,6 +24,9 @@
     *{
 
     }
+    html {
+      scroll-behavior: smooth;
+    }
     .cus{
         padding: 8px;
         width: 110px;
@@ -205,6 +208,20 @@ border-radius: 20px;
   text-align: left;
   color: gray;
 }
+#banner{
+  background-color: black;
+  padding: 150px;
+  margin: 20px;
+  border-radius: 10px;
+  background-image: url("files/background.jpg");
+  background-repeat: no-repeat, repeat;
+
+}
+@media only screen and (max-width: 760px) {
+    #banner{
+      padding: 25px !important;
+    }
+}
 </style>
 </head>
 <body>
@@ -212,7 +229,7 @@ border-radius: 20px;
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-593V3TC"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light p-2 fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white p-2 fixed-top" style="box-shadow: 0px 5px 10px -5px rgb(199, 206, 211);">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#">
                     <img src="files/Porbet full.png" alt="" width="120"  class="d-inline-block align-text-top">
@@ -223,7 +240,7 @@ border-radius: 20px;
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item" style="background: white !important;">
-                        <a class="nav-link active bg-light"   aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active"   aria-current="page" href="index.html">Home</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
@@ -253,44 +270,37 @@ border-radius: 20px;
               
                 <br>
                 <br>
-                <div id="all" style="z-index: auto;"  align="center">
-                  <div style="display: inline-block; transform: translateY(15%);" align="center" id="one">
-                      <div  align="left" class="m-2">
-                          <h1 style="font-size: 38px;" id="title"><strong>Welcome to our community</strong></h1>
-                          <br>
-                          <span style="color:gray;">Open Source makes Porbet services <br> technology ,frameworks ... more developed</span>
-                      </div>
-                      <br>
-                      <div align="center">
-                          <a href="https://porbet.github.io/store"><button class="btn2">Discover Android apps</button></a>
-                      </div>
-                      <br>
+
+                <div id="banner">
+                  <h1 style="font-size: 45px; font-weight: normal !important; color: white;"><strong>Porbet</strong>: Making something out of nothing .  </h1>
+                  <br>
+                  <span  style="font-size: 15px; display: inline-block; color: rgb(189, 189, 189); width: 50%;" id="description" >Porbet improving the programming community in <strong>Morocco</strong> by developping multiple apps, frameworks ... </span>
+                  <br>
+                  <br>
+                  <br>
+                  <div id="getstarted" align="center">
+                      <a href="#page" class="mar-1"><button class="btn btn-primary" >Get started</button></a>
                   </div>
-                  <img src="files/thumb.png" class="d-inline-block m-2" width="400px" style="transform: translateY(-15%); pointer-events: none;" id="two" />
-            </div>
-            <br>
+                </div>
+            <br><br>
               <div align="center">
-                <video width="320px" height="auto"  autoplay muted id="video" >
-                  <source src="files/Porbet intro.mp4" type="video/mp4">
-                </video>
-                <br>
                 <div id="page" align="left">
               <div align="center">
-                <h1>Open source by Porbet</h1>
+                <h1><strong>Open source by Porbet</strong></h1>
                 <br>
                 <br>
                 <div class="part">
-                  <h3><strong>Community</strong></h3>
+                  <h3>Community</h3>
                   <br>
                   <span style="color: gray;">Open source software often inspires a community of users and developers to form around it.</span>
                 </div>
                 <div class="part">
-                  <h3><strong>Collaboration</strong></h3>
+                  <h3>Collaboration</h3>
                   <br>
                   <span style="color: gray;">Porbet projects and frameworks helps programmers around the world to help each others and collaborate.</span>
                 </div>
                 <div class="part">
-                  <h3><strong>Developing</strong></h3>
+                  <h3>Developing</h3>
                   <br>
                   <span style="color: gray;">Open source projects usually contains developing aid , creating frameworks ... to the whole world's developers.</span>
                 </div>
@@ -375,17 +385,21 @@ border-radius: 20px;
                       <br>
                       <br>
                       <br>
-                      <div align="right" class="m-5">
-                        <a href="https://github.com/porbet" style="text-decoration:double;">Explore projects ...</a>
-                      </div>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <video width="320px" height="auto"  autoplay muted id="video" >
+                        <source src="files/Porbet intro.mp4" type="video/mp4">
+                      </video>
+                      
                     </div>
-                    <br>
-                    <br>
                 
               </div>
               </div>
-              <br>
-              <br>
               <br>
               <br>
               <!-- Footer -->
