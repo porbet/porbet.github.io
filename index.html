@@ -22,6 +22,11 @@
   <!-- End Google Tag Manager -->
 <style>
   
+  @import url('https://fonts.cdnfonts.com/css/steamflix-grotesk');
+  *{
+    font-family: 'Steamflix Grotesk', sans-serif;
+                                                
+  }
 .footer-distributed {
     border-radius: 00px;
   background-color: #ffffff;
@@ -205,15 +210,16 @@
       animation-iteration-count: infinite;
     }
     #page{
-  width: 60%;
+  width: 70%;
 }
     @media only screen and (max-width: 1403px ){
       #all{
         padding: 5px !important;
       }
-      #page{
+      #page,.container-fluid{
         width: 100% !important;
       }
+      
 } 
 @media only screen and (max-width: 1210px ){
     .one{
@@ -283,7 +289,7 @@ a{
   max-width: 100%;
   margin: 0;
   height: 18rem;
-  background-color: rgb(231, 231, 231);
+  background-color: rgb(245, 245, 245);
 }
 .card-img{
  width: auto;
@@ -320,29 +326,53 @@ border-radius: 20px;
 
 
 @media only screen and (max-width: 870px) {
-    #img-container{
+    .img-container{
       margin-bottom: 20px;
       width: 100%;
     }
-    #imgcon{
+    .imgcon{
       width: 320px !important;
     }
-    #par-container{
+   .par-container{
       width: 100% !important;
     }
 }
 
-#img-container{
+.img-container{
   margin-bottom: 0px;
   display: inline-block;
 }
-#par-container{
+.par-container{
   transform: translateY(15%);
   padding: 10px;
   display: inline-block;
   width: 40% ;
 }
+.decorated{
+      
+     overflow: hidden;
+     text-align: left;
+ }
+.decorated > span{
+    position: relative;
+    display: inline-block;
 
+}
+.decorated > span:before, .decorated > span:after{
+  color: rgb(202, 202, 202);
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 2px solid;
+    width: 100vw;
+    margin: 0 20px;
+}
+.decorated > span:before{
+    right: 100%;
+}
+.decorated > span:after{
+    left: 100%;
+}
 
 </style>
 </head>
@@ -351,15 +381,15 @@ border-radius: 20px;
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-593V3TC"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white p-2 fixed-top" style="box-shadow: 0px 5px 10px -5px rgb(199, 206, 211);">
-                <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white p-2 fixed-top" style="">
+                <div class="container-fluid" style="width: 70%;">
                   <a class="navbar-brand" href="#">
                     <img src="files/Porbet full.png" alt="" width="120"  class="d-inline-block align-text-top">
                     </a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <div class="collapse navbar-collapse"  id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item" style="background: white !important;">
                         <a class="nav-link active"   aria-current="page" href="index.html">Home</a>
@@ -406,7 +436,7 @@ border-radius: 20px;
                 <div id="banner">
                   <h1 style="font-size: 45px; font-weight: normal !important; color: white;"><strong>Porbet</strong>: Making something out of nothing .  </h1>
                   <br>
-                  <span  style="font-size: 15px; display: inline-block; color: rgb(189, 189, 189); width: 50%;" id="description" >Porbet improving the programming community in <strong>Morocco</strong> by developping multiple apps, frameworks ... </span>
+                  <span  style="font-size: 15px; display: inline-block; color: rgb(189, 189, 189); width: 50%;" id="description" >Nous utilisons intelligemment le digital et capitalisons sur les dernières innovations publicitaires et les nouvelles techs pour développer votre business et vous faire dépasser vos concurrents. </span>
                   <br>
                   <br>
                   <br>
@@ -418,14 +448,12 @@ border-radius: 20px;
 
 
 
-            
+            <br><br><br>
 
 
               <div align="center">
                 
-<video width="320" height="240" autoplay muted  >
-  <source src="files/Porbet intro.mp4" type="video/mp4">
-</video>
+
                 <div id="page" align="left">
               <div align="center">
                 <h1><strong>Open source by Porbet</strong></h1>
@@ -466,9 +494,9 @@ border-radius: 20px;
                 <br>
                 <br>
                 
-                <div align="center" id="alcontainer">
-                  <div id="img-container"><img src="Capture3.png" id="imgcon" width="500px"></div>
-                  <div id="par-container">
+                <div align="center" class="alcontainer">
+                  <div class="img-container"><img src="Capture3.png" class="imgcon" width="500px"></div>
+                  <div class="par-container">
                     <h1>
                       <span class="material-symbols-outlined" style="font-size: 33px; margin: 10px; transform: translateY(10%); background: linear-gradient(90deg, #7b58fb 0%, #734efa 70%); -webkit-background-clip: text;  -webkit-text-fill-color: transparent;">
                         auto_fix_high
@@ -482,10 +510,28 @@ border-radius: 20px;
                 <br>
                 <br>
                 <br>
+
+                <br><br><br>
+                <div align="center" class="alcontainer">
+                  <div class="par-container">
+                    <h1>
+                      <span class="material-symbols-outlined" style="font-size: 33px; margin: 10px; transform: translateY(10%); background: linear-gradient(90deg, #7b58fb 0%, #734efa 70%); -webkit-background-clip: text;  -webkit-text-fill-color: transparent;">
+                        auto_fix_high
+                      </span>
+                      <strong> Good quality. </strong></h1>
+                    <span style="color: gray;">At our company, we believe that quality is the cornerstone of any great product or service. That's why we go above and beyond to ensure that every product we offer and every service we provide meets the highest standards of excellence. </span>
+                  </div>
+                  <div class="img-container"><img src="Capture3.png" class="imgcon" width="500px"></div>
+                  
+                </div>
+                <br>
                 <br>
                 
-                
-                    <h2 style="font-size: 45px; font-weight: bold;" class="m-4">From our products.</h2>
+                    <h1 style="font-weight: bold;" class="m-4 decorated">
+                      <span>
+                       From our productivity.
+                      </span>
+                    </h1>
                 <br>
                 <br>
 
@@ -524,7 +570,11 @@ border-radius: 20px;
 
 
                        
-                <h2 style="font-size: 45px; font-weight: bold;" class="m-4">For Android Users. </h2>
+                <h1 style=" font-weight: bold;" class="m-4 decorated">
+                  <span>
+                  For Android Users. 
+                  </span>
+                </h1>
                 <br>
                 <br>
 
@@ -563,6 +613,11 @@ border-radius: 20px;
               <br>
               <br>
               <br>
+              <div align="center">
+                <video width="320" height="240" autoplay muted  >
+                  <source src="files/Porbet intro.mp4" type="video/mp4">
+                </video>
+              </div>
               <br>
               <br>
               <br>
