@@ -289,7 +289,7 @@ a{
   max-width: 100%;
   margin: 0;
   height: 18rem;
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(250, 250, 250);
 }
 .card-img{
  width: auto;
@@ -323,23 +323,43 @@ border-radius: 20px;
       padding: 25px !important;
     }
 }
+.imgbanner{
+    margin-top: 0px !important;
 
-
-@media only screen and (max-width: 870px) {
+}
+@media only screen and (max-width: 1100px) {
     .img-container{
       margin-bottom: 20px;
       width: 100%;
+      transform: translateY(0%) !important;
     }
     .imgcon{
-      width: 320px !important;
+      width: 90% !important;
     }
-   .par-container{
+    .par-container{
       width: 100% !important;
+    }
+    .sub_title{
+      width: 100% !important;
+    }
+    .imgbanner{
+      margin-top: 150px !important;
+      width: 90%;
+    }
+    .br{
+      display: none;
+    }
+    .bottom_nav{
+      display: block !important;
+    }
+    .types{
+      display: none;
     }
 }
 
 .img-container{
   margin-bottom: 0px;
+  transform: translateY(-10%);
   display: inline-block;
 }
 .par-container{
@@ -373,6 +393,61 @@ border-radius: 20px;
 .decorated > span:after{
     left: 100%;
 }
+.bottom_nav{
+ position: fixed;
+ width: 100%;
+ bottom: 0px;
+ padding: 15px;
+ height: 75px;
+ background-color: rgb(255, 255, 255);
+ border-top: 1px solid rgb(230, 230, 230);
+ z-index: 200;
+ display: none;
+}
+.item_bottom_nav{
+  display: inline-block;
+  transform: translateY(-5%);
+  width: 30%;
+  color: gray;
+  cursor: pointer;
+}
+.item_bottom_nav:hover{
+  color: gray;
+
+}
+.active_item_bottom_nav span{
+  color: #297ed3;
+}
+
+.types{
+    margin: 15px;
+  
+}
+.type_button_active{
+    background-color: #0080ff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    height: 40px;
+    width: 200px;
+    margin: 8px;
+}
+.type_button_active:hover{
+  background-color: #45a2ff;
+}
+
+.type_button{
+    color: #0080ff;
+    background-color: #f7f7f7;
+    border: none;
+    border-radius: 50px;
+    height: 40px;
+    width: 220px;
+    margin: 8px;
+}
+.type_button:hover{
+  background-color: #ebebeb;
+}
 
 </style>
 </head>
@@ -381,10 +456,10 @@ border-radius: 20px;
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-593V3TC"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white p-2 fixed-top" style="">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white p-2 fixed-top" style="border-bottom: 1px solid rgb(230, 230, 230);">
                 <div class="container-fluid" style="width: 70%;">
                   <a class="navbar-brand" href="#">
-                    <img src="files/Porbet full.png" alt="" width="120"  class="d-inline-block align-text-top">
+                    <img src="files/Porbet full open source.png" alt="" width="120"  class="d-inline-block align-text-top">
                     </a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -392,10 +467,13 @@ border-radius: 20px;
                   <div class="collapse navbar-collapse"  id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item" style="background: white !important;">
-                        <a class="nav-link active"   aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link"   aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item" style="background: white !important;">
+                        <a class="nav-link active"   aria-current="page" href="index.html">Open source</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact us</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="privacy.html">Privacy Policy</a>
@@ -428,41 +506,88 @@ border-radius: 20px;
                   </div>
                 </div>
               </nav>
-              <br>
               
-                <br>
-                <br>
+           
 
-                <div id="banner">
-                  <h1 style="font-size: 45px; font-weight: normal !important; color: white;"><strong>Porbet</strong>: Making something out of nothing .  </h1>
-                  <br>
-                  <span  style="font-size: 15px; display: inline-block; color: rgb(189, 189, 189); width: 50%;" id="description" >Nous utilisons intelligemment le digital et capitalisons sur les dernières innovations publicitaires et les nouvelles techs pour développer votre business et vous faire dépasser vos concurrents. </span>
-                  <br>
-                  <br>
-                  <br>
-                  <div id="getstarted" align="center">
-                      <a href="#page" class="mar-1"><button class="btn btn-primary" >Get started</button></a>
+               <div class="br"><br><br></div>
+                
+                
+
+              
+                <div align="center" class="alcontainer" style="padding: 10px; background-color: rgb(255, 255, 255); box-shadow: 0px 5px 15px -10px rgb(211, 211, 211);">
+                  <div class="par-container" align="left">
+                    <hr style="width: 40%; color: rgb(0, 0, 0);">
+                    <br>
+                    <h1>
+                      
+                      <strong style="font-size: 55px;">Porbet: Making something out of nothing.</strong></h1>
+                      <br>
+                    <div style="color: gray; width:70% ; font-size: 18px;" class="sub_title">Porbet improving the programming community in Morocco by developping multiple apps, frameworks ...</div>
+                    <br>
+                    <button class="type_button_active" style="width: 130px !important; transform: translateX(-10%);">
+                      <span class="material-symbols-outlined" style="transform: translateY(8%);">
+                        arrow_right_alt
+                        </span>
+                      <a href="#" ><div style="display: inline-block; transform: translateY(-22%);color: white;">Discover</div></a>
+                    </button>
                   </div>
+                  <div class="img-container"><img src="https://info.majortom.com/hubfs/Dev.jpg" class="imgcon imgbanner" width="500px" height="420px" style="object-fit: cover; border-radius: 15px;"></div>
+                  <br> <br> <br> 
                 </div>
-            
+            <br><br>
 
-
-
-            <br><br><br>
-
+            <div class="bottom_nav" align="center">
+              <a href="#" class="item_bottom_nav ">
+                <span class="material-symbols-outlined" style="font-size: 32px;">
+                  home
+                </span>
+                <div style="transform: translateY(-30%); font-size: 13px;">Home</div>
+              </a>
+              <a href="#" class="item_bottom_nav active_item_bottom_nav">
+                <span class="material-symbols-outlined" style="font-size: 32px;">
+                  frame_source
+                </span>
+                <div style="transform: translateY(-30%); font-size: 13px;">Open.S</div>
+              </a>
+              <a href="#" class="item_bottom_nav ">
+                <span class="material-symbols-outlined" style="font-size: 32px;">
+                  phone
+                </span>
+                <div style="transform: translateY(-30%); font-size: 13px;">Contact us</div>
+              </a>
+            </div> 
 
               <div align="center">
                 
 
+                <div class="types">
+
+                  <a href="#"><button class="type_button">
+                    <span class="material-symbols-outlined" style="transform: translateY(10%);">
+                      campaign
+                      </span>
+                    <div style="display: inline-block; transform: translateY(-22%);">Marketing</div>
+                  </button></a>
+                  <a href="#"><button class="type_button_active">
+                    <span class="material-symbols-outlined" style="transform: translateY(10%);">
+                      frame_source
+                      </span>
+                      <div style="display: inline-block;  transform: translateY(-22%);">Open source</div>
+                  </button></a>
+                  
+                </div>
+
+
+
+                <br><br>
                 <div id="page" align="left">
               <div align="center">
                 <h1><strong>Open source by Porbet</strong></h1>
                 <br>
-                <br>
-                <br>
+                
                 
                 <div class="part">
-                  <span class="material-symbols-outlined" style=" font-size: 100px; background: linear-gradient(90deg, #685b7b 0%, #095db1 70%); -webkit-background-clip: text;  -webkit-text-fill-color: transparent;">
+                  <span class="material-symbols-outlined" style=" font-size: 100px; background: linear-gradient(90deg, #297ed3 0%, #0080ff 70%); -webkit-background-clip: text;  -webkit-text-fill-color: transparent;">
                     flag
                   </span>
                   <br>
@@ -471,16 +596,16 @@ border-radius: 20px;
                   <span style="color: gray; font-size: 15px;">Open source software often inspires a community of users and developers to form around it.</span>
                 </div>
                 <div class="part">
-                  <span class="material-symbols-outlined" style=" font-size: 100px; background: linear-gradient(90deg, #685b7b 0%, #095db1 70%); -webkit-background-clip: text;  -webkit-text-fill-color: transparent;">
-                    webhook
+                  <span class="material-symbols-outlined" style=" font-size: 100px; background: linear-gradient(90deg, #0080ff 0%, #297ed3 70%); -webkit-background-clip: text;  -webkit-text-fill-color: transparent;">
+                    groups
                   </span>
                   <br>
                   <span style="font-size: 25px; ">Collaboration</span>
                   <br><br>
                   <span style="color: gray;">Porbet projects and frameworks helps programmers across <strong>Morocco</strong> to help each others and collaborate.</span>
                 </div>
-                <div class="part">
-                  <span class="material-symbols-outlined" style=" font-size: 100px; background: linear-gradient(90deg, #685b7b 0%, #095db1 70%); -webkit-background-clip: text;  -webkit-text-fill-color: transparent;">
+                <div class="part" style="transform: translateY(8%);">
+                  <span class="material-symbols-outlined" style=" font-size: 100px; background: linear-gradient(90deg, #297ed3 0%, #0080ff 70%); -webkit-background-clip: text;  -webkit-text-fill-color: transparent;">
                     code
                   </span>
                   <br>
@@ -493,7 +618,7 @@ border-radius: 20px;
                 <br>
                 <br>
                 <br>
-                
+                <br>
                 <div align="center" class="alcontainer">
                   <div class="img-container"><img src="Capture3.png" class="imgcon" width="500px"></div>
                   <div class="par-container">
@@ -511,19 +636,6 @@ border-radius: 20px;
                 <br>
                 <br>
 
-                <br><br><br>
-                <div align="center" class="alcontainer">
-                  <div class="par-container">
-                    <h1>
-                      <span class="material-symbols-outlined" style="font-size: 33px; margin: 10px; transform: translateY(10%); background: linear-gradient(90deg, #7b58fb 0%, #734efa 70%); -webkit-background-clip: text;  -webkit-text-fill-color: transparent;">
-                        auto_fix_high
-                      </span>
-                      <strong> Good quality. </strong></h1>
-                    <span style="color: gray;">At our company, we believe that quality is the cornerstone of any great product or service. That's why we go above and beyond to ensure that every product we offer and every service we provide meets the highest standards of excellence. </span>
-                  </div>
-                  <div class="img-container"><img src="Capture3.png" class="imgcon" width="500px"></div>
-                  
-                </div>
                 <br>
                 <br>
                 
